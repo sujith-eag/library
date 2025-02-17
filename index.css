@@ -97,20 +97,39 @@
     transition: opacity 0.3s ease;
 }
 
+/* For Python Card Transition */
 .subject_bg.python::before
 {
 background-image: url('img/python1.webp'); /* Replace with actual image */
 }
+.pyCategories {
+    overflow: hidden;
+    /* max-height: 0; */
+    height: 0; /* Start with zero height */
+    opacity: 0; /* Start with fully transparent */
+    transition: opacity 0.5s ease, height 0.5s ease;
+    /* transition: max-height 0.5s ease-out; */
+}
+.pyCategories.show {
+    height: auto; /* Let the height expand naturally */
+    opacity: 1; /* Make it fully opaque */
+      /* max-height: 1000px; Or a large enough value */
+}
 
+
+
+/* For JavaScript Card Transition */
 .subject_bg.js::before
 {
 background-image: url('img/js1.jpg'); /* Replace with actual image */
 }
 
+/* For C Card Transition */
 .subject_bg.cds::before
 {
 background-image: url('img/c1.jpeg'); /* Replace with actual image */
 }
+
 
 /* When hovering over the subject, make the image more prominent */
 .subject_bg:hover::before {
