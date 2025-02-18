@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalogue</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+  
+<body>
+    <div id="MainContainer">
+      <div class="header">
+        <h1>Library Catalogue</h1>
+      </div>
+      
+      <div class="subjects">
+        <!-- Python Main Card -->
+        <div class="subject-card python" onclick="toggleCategories('python')">
+          <div class="subject">
+            <h2>Python</h2>
+          </div>
+        </div>
+  
+        <div class="sub-categories python" style="display: none;">
+          <div class="sub-card">
+            <a href="https://sujith-eag.github.io/personal-site/docs/python/1data-types/primitive-types/" target="_blank">
+              <h3>Basic Data Types</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://sujith-eag.github.io/personal-site/docs/python/1data-types/complex-types/02-cdt-05-tuples/" target="_blank">
+              <h3>Tuple</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://sujith-eag.github.io/personal-site/docs/python/1data-types/complex-types/4list/" target="_blank">
+              <h3>Lists</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://sujith-eag.github.io/personal-site/docs/python/1data-types/complex-types/7dictionary/" target="_blank">
+              <h3>Dictionaries</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://sujith-eag.github.io/personal-site/docs/python/5functions/" target="_blank">
+              <h3>Functions</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://sujith-eag.github.io/personal-site/docs/python/10numpy/" target="_blank">
+              <h3>NumPy</h3>
+            </a>
+          </div>
+        </div>
+  
+        <!-- JavaScript Main Card -->
+        <div class="subject-card js" onclick="toggleCategories('js')">
+          <div class="subject">
+            <h2>JavaScript</h2>
+          </div>
+        </div>
+  
+        <div class="sub-categories js" style="display: none;">
+          <div class="sub-card">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">
+              <h3>Introduction to JS</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank">
+              <h3>Functions</h3>
+            </a>
+          </div>
+          <div class="sub-card">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">
+              <h3>Loops</h3>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <script>
+      function toggleCategories(language) {
+        const subCategories = document.querySelector(`.sub-categories.${language}`);
+        subCategories.style.display = (subCategories.style.display === "none" || subCategories.style.display === "") ? "flex" : "none";
+      }
+    </script>
+  </body>
+
+
+</html>
+
