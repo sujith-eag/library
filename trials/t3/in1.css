@@ -1,0 +1,52 @@
+/* Initially, hide the table rows */
+.PyTopic, .JsTopic {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease;
+}
+
+/* When active, show the table rows */
+.active .PyTopic, .active .JsTopic {
+    display: table-row;  /* Display the rows */
+    max-height: 100px;    /* Max height for the transition */
+    opacity: 1;
+}
+
+/* Styling for the topic table */
+.topicTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styling for each topic cell */
+.topicTable td {
+    padding: 15px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.topicTable td:hover {
+    background-color: darkviolet;
+}
+
+/* Styling for the buttons */
+.ToggleBtn {
+    background-color: aliceblue;
+    width: 90%;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ToggleBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

@@ -50,5 +50,30 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+CdsContainer
+CdsButton            
+CdsTopic
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     const pyButton = document.getElementById('PyButton');
+//     const jsButton = document.getElementById('JsButton');
+    
+//     const pythonContainer = document.getElementById('PythonContainer');
+//     const jsContainer = document.getElementById('JsContainer');
 
+//     pyButton.addEventListener('click', function() {
+//         if (pythonContainer.classList.contains('active')) {
+//             pythonContainer.classList.remove('active');
+//         } else {
+//             pythonContainer.classList.add('active');
+//         }
+//     });
+
+//     jsButton.addEventListener('click', function() {
+//         if (jsContainer.classList.contains('active')) {
+//             jsContainer.classList.remove('active');
+//         } else {
+//             jsContainer.classList.add('active');
+//         }
+//     });
+// });
