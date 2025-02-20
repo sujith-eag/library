@@ -130,19 +130,19 @@ a {
 
 #PyButton
 {
-    background-image: url(/img/python1.webp);
+    background-image: url(img/python1.webp);
 }
 #JsButton
 {
-    background-image: url(/img/js1.jpg);
+    background-image: url(img/js1.jpg);
 }
 #JsdomButton
 {
-    background-image: url(/img/css1.jpg);
+    background-image: url(img/css1.jpg);
 }
 #CdsButton
 {
-    background-image: url(/img/c1.jpeg);
+    background-image: url(img/c1.jpeg);
 }
 
 
