@@ -1,0 +1,114 @@
+/* NavBar - ID for Navigation bar */
+/* MainContainer - ID Body containing All Cards */
+    /* container - class General Subject container */
+        /* ToggleBtn - class General Toggle button */
+        /* topicCard - class General Topic anchor link card */
+
+
+/* To handle only lagre screen viewing */
+
+/* Make it somemore compressed in from here */
+
+@media screen and (min-width: 800px){
+    
+    #MainContainer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* To wrap child containers */
+        width: 100%; /* To cover full screen width */
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .container { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 40%;
+        height: 50%;
+        padding: 5px;
+    }
+
+    .ToggleBtn{
+        width: 100%;
+        height: 50%;
+        
+        text-align: center;
+        line-height: 90px;
+        
+        grid-column: span 3; /* In grid spanning 2 columns*/
+    }
+
+    .topicCard {
+        width: 100%;
+        height: 80px;
+        margin: 5px 0;
+        
+        text-align: center;
+        text-decoration: solid;
+        line-height: 20px; /* To center text vertically */
+    }
+
+
+    .topicCard:hover{
+        transform: translateY(-7px); 
+        /* slightly move it up for raised effect */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        /* Darker shadow on hover */
+        opacity: 1;
+        font-size: 1.2rem;
+        background-color: rgb(255, 255, 255);
+    }
+    .ToggleBtn:hover{
+        transform: translateY(-5px); 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        font-size: 1.4rem;
+        opacity: 1;
+    }
+
+
+
+    /* Image Section */
+    #PyButton, #JsButton, #JsdomButton, #CdsButton
+    {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 170px;
+        
+    }
+
+
+    .Header {
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(90deg, rgba(24, 246, 246, 0.8), rgba(49, 70, 252, 0.8));
+    }
+
+    /* Header title styling */
+    .Header h2 {
+        font-size: 40px;
+        color: blanchedalmond;
+        font-weight: bolder;
+        margin: 20px;
+        text-transform: uppercase;
+    }
+
+}
+/* 
+@media screen and (max-width: 2000px) {
+    .container {
+        width: 70%;
+    }
+    .ToggleBtn {
+        width: 100%;
+        height: 90px;
+    }
+    .topicCard {
+        width: 100%;
+        height: 90px;
+    }
+} */
