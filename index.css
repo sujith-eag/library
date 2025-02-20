@@ -13,15 +13,26 @@
 /* JsButton - ID */
 /* JsTopic */
 
-/* JsdomContainer
-JsdomButton
-JsdomTopic */
-
-/* CdsContainer
-CdsButton            
-CdsTopic */
-
 /* 'active' class injected to show topics */
+
+
+.Header {
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, rgba(24, 246, 246, 0.8), rgba(49, 70, 252, 0.8));    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header title styling */
+.Header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(245, 246, 244);
+}
 
 
 #MainContainer {
@@ -31,11 +42,9 @@ CdsTopic */
     width: 100%; /* To cover full screen width */
     height: auto;
     padding-top: 20px;
-    /* width: 1350px;
-    height: 780px; */
-    
     background: linear-gradient(135deg, rgba(126, 234, 234, 0.8), rgba(238, 255, 54, 0.8));
 }
+
 
 .container { 
     display: grid;
@@ -51,23 +60,30 @@ CdsTopic */
     border-radius: 10px;
 }
 
+
+
 .ToggleBtn{
     width: 100%;
     height: 100px;
-    
     text-align: center;
     line-height: 90px;
-    
-    grid-column: span 2; /* In grid spanning 2 columns*/
+    grid-column: span 2; /* In grid, One Button Should span 2 columns*/
 }
 .ToggleBtn{    /* Style for button*/
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: aliceblue;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Raised shadow effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;   
 }
+.ToggleBtn:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
 
 
 
@@ -85,32 +101,23 @@ CdsTopic */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;    
-    opacity: 0.8;
+    opacity: 0.9;
 }
-
-
-
 .topicCard:hover{
     transform: translateY(-7px); 
     /* slightly move it up for raised effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     /* Darker shadow on hover */
     opacity: 1;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color: rgb(255, 255, 255);
-}
-.ToggleBtn:hover{
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    font-size: 1.4rem;
-    opacity: 1;
 }
 
 
 
 
 /* Image Section */
-#PyButton, #JsButton, #JsdomButton, #CdsButton
+#PyButton, #JsButton, #JsdomButton, #CdsButton, #htmlButton, #bashButton, #dbmsButton, #dsaButton, #toolButton 
 {
     background-size: cover;
     background-position: center;
@@ -128,14 +135,32 @@ CdsTopic */
 }
 #JsdomButton
 {
-    background-image: url(img/css1.jpg);
+    background-image: url(img/jsdom.png);
 }
 #CdsButton
 {
     background-image: url(img/c1.jpeg);
 }
-
-
+#htmlButton
+{
+    background-image: url(img/css1.jpg);
+}
+#bashButton
+{
+    background-image: url(img/bash1.jpeg);
+}
+#dbmsButton
+{
+    background-image: url(img/dbms1.png);
+}
+#dsaButton
+{
+    background-image: url(img/leet1.png);
+}
+#toolButton
+{
+    background-image: url(img/tool1.jpg);
+}
 
 /* Adjust for smaller screens */
 /* Stack containers on top of each other for small screens */
@@ -157,27 +182,15 @@ CdsTopic */
 
 
 
-
 /* The Toggle Space for Topics */
 
 /* Initially, hide all the topic cards */
-.PyTopic, .JsTopic, .JsdomTopic, .CdsTopic {
+.PyTopic, .JsTopic, .JsdomTopic, .CdsTopic, .htmlTopic, .bashTopic, .dbmsTopic, .dsaTopic, .toolTopic {
     display: none;
 }
 
 /* Show for respective containers when active */
-.active .PyTopic {
-    display: block;
-}
-
-.active .JsTopic {
-    display: block;
-}
-
-.active .JsdomTopic {
-    display: block;
-}
-.active .CdsTopic {
+.active .PyTopic, .active .JsTopic, .active .JsdomTopic, .active .CdsTopic, .active .htmlTopic, .active .bashTopic, .active .dbmsTopic, .active .dsaTopic, .active .toolTopic {
     display: block;
 }
 
@@ -185,21 +198,3 @@ CdsTopic */
 
 
 
-.Header {
-
-    background: linear-gradient(90deg, rgba(24, 246, 246, 0.8), rgba(49, 70, 252, 0.8));    text-align: center;
-    padding: 20px 0;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Header title styling */
-.Header h2 {
-    color: rgb(245, 246, 244);
-      
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-}
