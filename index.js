@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// document.addEventListener('DOMContentLoaded', function() {
 
-    
+//  The Old Repetetive code
+
+// document.addEventListener('DOMContentLoaded', function() {    
     // To Add link to every card
     // const topicCards = document.querySelectorAll('.topicCard');
-
     // topicCards.forEach(topic => {
     //     topic.addEventListener('click', () => {
     //     // window.location.href = topic.getAttribute('data-url');  opens locally

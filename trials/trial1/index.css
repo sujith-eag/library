@@ -101,7 +101,7 @@
 /* For Python Card Transition */
 .subject_bg.python::before
 {
-background-image: url('img/python1.webp');
+background-image: url('/img/python1.webp');
 }
 .pyCategories {
     overflow: hidden;
@@ -161,13 +161,13 @@ background-image: url('img/python1.webp');
 /* For JavaScript Card Transition */
 .subject_bg.js::before
 {
-background-image: url('img/js1.jpg');
+background-image: url('/img/js1.jpg');
 }
 
 /* For C Card Transition */
 .subject_bg.cds::before
 {
-background-image: url('img/c1.jpeg');
+background-image: url('/img/c1.jpeg');
 }
 
 

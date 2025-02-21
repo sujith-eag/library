@@ -4,7 +4,6 @@
         /* ToggleBtn - class General Toggle button */
         /* topicCard - class General Topic anchor link card */
 
-        
 /* PythonContainer - ID Main Python Container */
 /* PyButton - ID The Main Interaction that will have the image */
 /* PyTopic - For the links of Subjects */
@@ -20,11 +19,12 @@
     padding: 20px 0;
     border-radius: 10px 10px 0 0;
     margin-bottom: 5px;
-    background: linear-gradient(90deg, rgba(24, 246, 246, 0.8), rgba(49, 70, 252, 0.8));    text-align: center;
+    /* background: linear-gradient(90deg, rgba(24, 246, 246, 0.8), rgba(49, 70, 252, 0.8));     */
+    text-align: center;
+    
+    background: linear-gradient(135deg, rgb(48, 125, 231), hsl(0, 61%, 60%));
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
 /* Header title styling */
 .Header h2 {
     font-size: 32px;
@@ -35,6 +35,7 @@
 }
 
 
+
 #MainContainer {
     display: flex;
     justify-content: space-around;
@@ -42,8 +43,11 @@
     width: 100%; /* To cover full screen width */
     height: auto;
     padding-top: 20px;
-    background: linear-gradient(135deg, rgba(126, 234, 234, 0.8), rgba(238, 255, 54, 0.8));
+    /* background: linear-gradient(135deg, rgba(133, 180, 180, 0.8), rgba(238, 255, 54, 0.8)); */
+    background: linear-gradient(45deg, rgba(101, 180, 255, 0.6), rgba(249, 220, 103, 0.8));
+
 }
+
 
 
 .container { 
@@ -52,13 +56,26 @@
     gap: 10px;
     width: 45%;
     height: 30%;
-    margin-bottom: 10px;   /* space for below stacked cards */
-    padding: 2px;
+    margin-bottom: 15px;   /* space for below stacked cards */
+    padding: 0 2px;
 }
 .container {
-    background: linear-gradient(150deg, rgb(245, 244, 254), rgb(133, 128, 128));
+    background: linear-gradient(60deg, rgba(255, 255, 255, 0.95), rgba(150, 200, 195, 0.9));
+
+    /* background: linear-gradient(60deg, rgba(255, 255, 255, 0.9), rgba(204, 229, 228, 0.85)); */
+    /* background: linear-gradient(60deg, rgb(245, 244, 254), rgb(107, 185, 179)); */
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
 }
+/* Adjusting for smaller screens - Stack containers on top of each other for small screens */
+@media screen and (max-width: 800px) {
+    .container {
+        width: 75%;
+        margin-bottom: 12px
+    }
+}
+
 
 
 
@@ -69,7 +86,7 @@
     line-height: 90px;
     grid-column: span 2; /* In grid, One Button Should span 2 columns*/
 }
-.ToggleBtn{    /* Style for button*/
+.ToggleBtn{
     opacity: 0.9;
     background-color: aliceblue;
     border-radius: 10px;
@@ -78,10 +95,16 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;   
 }
 .ToggleBtn:hover{
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
     font-size: 1.4rem;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+@media screen and (max-width: 800px) {
+    .ToggleBtn {
+        width: 100%;
+        height: 90px;
+    }
 }
 
 
@@ -91,26 +114,33 @@
 .topicCard {
     width: 100%;
     height: 80px;
-    margin: 5px 0;
+    margin: 3px 4px;
     
     text-align: center;
-    line-height: 100px; /* To center text vertically */
+    line-height: 75px; /* To center text vertically */
 }
 .topicCard{
-    background-color: rgb(250, 245, 245);
+    /* background: linear-gradient(150deg, rgba(255, 255, 255, 0.85), rgba(130, 180, 170, 0.9)); */
+    background-color: rgb(243, 243, 243);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;    
     opacity: 0.9;
 }
 .topicCard:hover{
-    transform: translateY(-7px); 
+    transform: translateY(-6px); 
     /* slightly move it up for raised effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     /* Darker shadow on hover */
     opacity: 1;
     font-size: 1.1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 166, 95);
+}
+@media screen and (max-width: 800px) {
+    .topicCard {
+        width: 100%;
+        height: 70px;
+    }
 }
 
 
@@ -124,7 +154,6 @@
     background-repeat: no-repeat;
     height: 100px;
 }
-
 #PyButton
 {
     background-image: url(img/python1.webp);
@@ -159,32 +188,12 @@
 }
 #toolButton
 {
-    background-image: url(img/tool1.jpg);
-}
-
-/* Adjust for smaller screens */
-/* Stack containers on top of each other for small screens */
-
-@media screen and (max-width: 800px) {
-    .container {
-        width: 75%;
-    }
-    .ToggleBtn {
-        width: 100%;
-        height: 80px;
-    }
-    .topicCard {
-        width: 100%;
-        height: 70px;
-    }
+    background-image: url(img/tool2.png);
 }
 
 
 
-
-/* The Toggle Space for Topics */
-
-/* Initially, hide all the topic cards */
+/* The Toggle Space for Topics - Hiding all topic cards initially */
 .PyTopic, .JsTopic, .JsdomTopic, .CdsTopic, .htmlTopic, .bashTopic, .dbmsTopic, .dsaTopic, .toolTopic {
     display: none;
 }
@@ -193,6 +202,8 @@
 .active .PyTopic, .active .JsTopic, .active .JsdomTopic, .active .CdsTopic, .active .htmlTopic, .active .bashTopic, .active .dbmsTopic, .active .dsaTopic, .active .toolTopic {
     display: block;
 }
+
+
 
 
 
