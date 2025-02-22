@@ -147,7 +147,7 @@
 
 
 /* Image Section */
-#PyButton, #JsButton, #JsdomButton, #CdsButton, #htmlButton, #bashButton, #dbmsButton, #dsaButton, #toolButton 
+#osButton, #PyButton, #JsButton, #JsdomButton, #CdsButton, #htmlButton, #bashButton, #dbmsButton, #dsaButton, #toolButton 
 {
     background-size: cover;
     background-position: center;
@@ -190,16 +190,20 @@
 {
     background-image: url(img/tool2.png);
 }
+#osButton
+{
+    background-image: url(img/os1.webp);
+}
 
 
 
 /* The Toggle Space for Topics - Hiding all topic cards initially */
-.PyTopic, .JsTopic, .JsdomTopic, .CdsTopic, .htmlTopic, .bashTopic, .dbmsTopic, .dsaTopic, .toolTopic {
+.osTopic , .PyTopic, .JsTopic, .JsdomTopic, .CdsTopic, .htmlTopic, .bashTopic, .dbmsTopic, .dsaTopic, .toolTopic {
     display: none;
 }
 
 /* Show for respective containers when active */
-.active .PyTopic, .active .JsTopic, .active .JsdomTopic, .active .CdsTopic, .active .htmlTopic, .active .bashTopic, .active .dbmsTopic, .active .dsaTopic, .active .toolTopic {
+.active .osTopic, .active .PyTopic, .active .JsTopic, .active .JsdomTopic, .active .CdsTopic, .active .htmlTopic, .active .bashTopic, .active .dbmsTopic, .active .dsaTopic, .active .toolTopic {
     display: block;
 }
 
