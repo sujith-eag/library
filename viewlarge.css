@@ -75,6 +75,10 @@
         text-decoration: solid;
         line-height: 80px; /* To center text vertically */
         opacity: 0.9;
+        
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .topicCard:hover{
         transform: translateY(-7px); 
