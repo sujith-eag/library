@@ -10,7 +10,7 @@
 @media screen and (min-width: 800px){
     
     /* Image Section to be updated */
-    #PyButton, #JsButton, #JsdomButton, #CdsButton, #htmlButton, #bashButton, #dbmsButton, #dsaButton, #toolButton, #osButton 
+    #PyButton, #JsButton, #JsdomButton, #JavaCoreButton, #CdsButton, #htmlButton, #bashButton, #dbmsButton, #dsaButton, #toolButton, #osButton 
     {
         height: 200px;
     }
